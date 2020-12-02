@@ -1,0 +1,5 @@
+<button #title type="button" (click)="toggleCollapsed()" class="collapsible with-open-indicator" [ngClass]="{'active': isExpanded}">{{titleText}}</button>
+<div #contentContainer class="content-block" [ngClass]="{'active': isExpanded}">
+	<ng-content></ng-content>
+	<ng-container #content></ng-container>
+</div>
